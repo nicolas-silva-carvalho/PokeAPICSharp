@@ -1,0 +1,38 @@
+﻿@model Pokemon
+
+@{
+    ViewData["Title"] = "Detalhes do Pokémon";
+}
+
+
+<section>
+    
+    <div class="text-center">
+        <h1 class="display-4">Detalhes do Pokémon</h1>
+        <img src="@Model.sprites.front_default" style="box-shadow: rgba(0, 0, 0,25) 0px 0px 1px"/>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>Numero:</th>
+                    <td>@Model.id</td>
+                </tr>
+                <tr>
+                    <th>Nome:</th>
+                    <td>@Model.name</td>
+                </tr>
+                <tr>
+                    <th>Experiência Base:</th>
+                    <td>@Model.base_experience</td>
+                </tr>
+                <tr>
+                    <th>Altura:</th>
+                    <td>@Model.height</td>
+                </tr>
+                <tr>
+                    <th>Peso:</th>
+                    <td>@Model.weight</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
